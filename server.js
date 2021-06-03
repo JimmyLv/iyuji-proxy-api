@@ -4,7 +4,7 @@ const next = require('next')
 
 const devProxy = {
   '/api': {
-    target: 'https://swapi.co/api/',
+    target: 'https://jsonplaceholder.typicode.com/',
     pathRewrite: { '^/api': '/' },
     changeOrigin: true,
   },
